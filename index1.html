@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex">
+    <div class="container">
+        <div class="user"></div>
+        <form method="post" action="/myaction.php" name="myform" onsubmit="return validateForm()">
+         <h1>Login In</h1>
+         <div class="input" id="name">
+             <input type="text" name="username" id="name"  required /><b><span class="formerror"></span></b>
+             <label for="username">Username</label>
+         </div>
+         <div class="input-box" id="pass">
+            <input type="password" name="password" id="pass"  required /><b><span class="formerror"></span></b>
+            <label for="username">Password</label>
+            <div class="forget"><a href="#">Forget password</a>
+            </div>
+        </div>
+        <input type="submit" value="login" />
+        </form>
+        <div class="div">
+            <div class="line"></div>
+            <div class="signup" >Don't Have an Account?
+                <a href="#">Sign Up</a></div>
+        </div>
+    </div>
+
+        
+</body>
+
+
+    
+<script src="validate.js"></script>
+
+
+
+   
+
+
+</html>
